@@ -1,0 +1,22 @@
+// Create Variables
+$primaryButton: #00ccff;
+$dangerButton: #ff0000;
+$textColor: rgb(83, 83, 83);
+
+/* -------------------------------------------------------------------------- */
+header button {
+	background: $primaryButton;
+}
+.contact button {
+	background: $dangerButton;
+}
+header h1 {
+	color: $textColor;
+}
+/* -------------------------------------------------------------------------- */
+
+header {
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+}
