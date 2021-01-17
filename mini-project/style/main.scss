@@ -1,8 +1,8 @@
 @import "configs";
 @import "utilities";
 @import "buttons";
+@import "mobile";
 
-// _style.scss
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -63,40 +63,6 @@ a {
 		h1 {
 			font-size: 50px;
 			line-height: 1.2;
-		}
-	}
-}
-
-// Margin & padding classes
-$spaceamounts: (1, 2, 3, 4, 5);
-
-@each $space in $spaceamounts {
-	.m-#{$space} {
-		margin: #{$space}rem;
-	}
-	.my-#{$space} {
-		margin: #{$space}rem 0;
-	}
-
-	.p-#{$space} {
-		padding: #{$space}rem;
-	}
-	.py-#{$space} {
-		padding: #{$space}rem 0;
-	}
-}
-
-// _mobile.scss
-@media (max-width: 700px) {
-	.showcase {
-		height: 400px;
-
-		&-content {
-			text-align: center;
-
-			img {
-				display: none;
-			}
 		}
 	}
 }
