@@ -1,0 +1,12 @@
+// Separate Code into multiple parts
+// @import separated secodary files into main scss file
+@import "_variables.scss";
+@import "_header";
+
+/* -------------------------------------------------------------------------- */
+
+.contact {
+	@include flex_center(column, #0ac552b2);
+}
+
+/* -------------------------------------------------------------------------- */

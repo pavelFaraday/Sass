@@ -1,0 +1,30 @@
+//  @mixin
+@mixin flex_center($direction, $background) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: $direction;
+	background-color: $background;
+}
+
+header {
+	// @include
+	@include flex_center(row, #ff4800);
+
+	button {
+		background: $primaryButton;
+		// add hover
+		&:hover {
+			background: yellow;
+			cursor: pointer;
+		}
+		// add sudo-classes
+		&::after {
+			content: " world";
+		}
+	}
+	h1 {
+		color: $textColor;
+	}
+}
