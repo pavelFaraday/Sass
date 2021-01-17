@@ -1,0 +1,25 @@
+.main {
+  background-color: lightblue;
+}
+
+.main-header {
+  padding: 20px;
+  color: red;
+}
+
+/* -------------------------------------------------------------------------- */
+.btn_primary, .btn_secondary {
+  padding: 20px;
+  border: 3px solid red;
+  color: white;
+  border-radius: 15px;
+}
+
+.btn_primary {
+  background-color: blue;
+}
+
+.btn_secondary {
+  background-color: #5c5c69;
+}
+/*# sourceMappingURL=main.css.map */

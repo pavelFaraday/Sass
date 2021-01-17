@@ -1,0 +1,28 @@
+.main {
+	background-color: lightblue;
+	// & === .main
+	// &-header === .main-header
+	&-header {
+		padding: 20px;
+		color: red;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+
+// %btn_   is common in classes (.btn_primary, .btn_secondary).
+// So, we can share common properties of different elements in one class (%btn_)
+%btn_ {
+	padding: 20px;
+	border: 3px solid red;
+	color: white;
+	border-radius: 15px;
+}
+.btn_primary {
+	@extend %btn_;
+	background-color: blue;
+}
+.btn_secondary {
+	@extend %btn_;
+	background-color: rgb(92, 92, 105);
+}
