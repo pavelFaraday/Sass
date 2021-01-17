@@ -1,0 +1,21 @@
+//Separate Code into multiple parts
+header {
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	button {
+		background: $primaryButton;
+		// add hover
+		&:hover {
+			background: yellow;
+			cursor: pointer;
+		}
+		// add sudo-classes
+		&::after {
+			content: " world";
+		}
+	}
+	h1 {
+		color: $textColor;
+	}
+}
