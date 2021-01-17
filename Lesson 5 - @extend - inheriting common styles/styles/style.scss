@@ -1,0 +1,16 @@
+// Separate Code into multiple parts
+// @import separated secodary files into main scss file
+@import "_variables.scss";
+@import "_header";
+
+/* -------------------------------------------------------------------------- */
+
+.contact {
+	// @extend
+	@extend header;
+
+	// override the 'header'-s background color
+	background-color: lightseagreen;
+}
+
+/* -------------------------------------------------------------------------- */
