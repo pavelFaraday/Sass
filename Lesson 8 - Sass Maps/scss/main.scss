@@ -1,0 +1,12 @@
+// make Sass Map
+$colors: (
+	forButtons: #832f2f,
+	forLinks: #ff0080,
+	forNavs: #00ff73,
+	forHeaders: #83c32f,
+);
+
+// use Sass Map
+h3 {
+	background-color: map-get($colors, forHeaders);
+}
