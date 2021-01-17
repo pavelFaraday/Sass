@@ -9,6 +9,8 @@ header button {
 }
 .contact button {
 	background: $dangerButton;
+	// calculations
+	width: 100% - 20%;
 }
 header h1 {
 	color: $textColor;
